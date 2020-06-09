@@ -1,3 +1,5 @@
+import {preferences} from "./main.js";
+
 export var products = [
     {
         name: "tomato",
@@ -82,9 +84,11 @@ export var products = [
 
 ];
 
+
+
 export function restrictListProducts() {
 
-    let product_names = [];
+    let product_array = [];
     for (let i=0; i<products.length; i+=1) {
         if (preferences["vegetarian"] && !products[i].vegetarian){
             continue;
@@ -95,7 +99,23 @@ export function restrictListProducts() {
         if (preferences["organic"] && !products[i].organic){
             continue;
         }
-        product_names.push(products[i].name +" $" + products[i].price);
+        product_array.push({name: products[i].name, price: products[i].price, category: products[i].category});
     }
-    return product_names;
+    return product_array;
+}
+
+export function getTotalPrice(chosenProducts) {
+    let total = 0;
+    for (let i=0; i<chosenProducts.length; i++){
+        let prodPrice = 0;
+        for (let j =0; j<products.length; j++){
+            if (products[j].name == chosenProducts[i]){
+                prodPrice = products[j].price;
+            }
+        }
+        total += parseFloat(prodPrice);
+        var  ntot = total.toFixed(2);
+    }
+    return ntot;
+
 }

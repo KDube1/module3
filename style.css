@@ -1,0 +1,190 @@
+
+.veggieCollapsible {
+    width: 30%;
+    border: 1px;
+    text-align: left;
+    font-size: 15px;
+    background-color: #5fc902;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+
+}
+
+.veggieCollapsible:after{
+    margin-left: 2px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    vertical-align: bottom;
+    display: inline-block;
+
+    content:'';
+    border: 5px solid transparent;
+    border-top: 8px solid white;
+    float: right;
+
+
+}
+
+
+.vegActive,
+.veggieCollapsible:hover {
+    background-color: #59bf00;
+}
+
+.veggieContent {
+
+    display: none;
+    width: 30%;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+
+.grainCollapsible {
+    width: 30%;
+    border: 1px;
+    text-align: left;
+    font-size: 15px;
+    background-color: #fcb900;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+
+}
+
+ .grainCollapsible:after{
+    margin-left: 2px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    vertical-align: bottom;
+    display: inline-block;
+
+    content:'';
+    border: 5px solid transparent;
+    border-top: 8px solid white;
+    float: right;
+
+
+}
+
+
+.grainActive,
+.grainCollapsible:hover {
+    background-color: #ebac00;
+}
+
+.grainContent {
+
+    display: none;
+    width: 30%;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+
+
+.dairyCollapsible {
+    width: 30%;
+    border: 1px;
+    text-align: left;
+    font-size: 15px;
+    background-color: #00a5eb;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+
+}
+
+.dairyCollapsible:after{
+    margin-left: 2px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    vertical-align: bottom;
+    display: inline-block;
+
+    content:'';
+    border: 5px solid transparent;
+    border-top: 8px solid white;
+    float: right;
+
+
+}
+
+
+.dairyActive,
+.dairyCollapsible:hover {
+    background-color: #0096d6;
+}
+
+.dairyContent {
+
+    display: none;
+    width: 30%;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+.meatCollapsible {
+    width: 30%;
+    border: 1px;
+    text-align: left;
+    font-size: 15px;
+    background-color: #a10013;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+
+}
+
+.meatCollapsible:after{
+    margin-left: 2px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    vertical-align: bottom;
+    display: inline-block;
+
+    content:'';
+    border: 5px solid transparent;
+    border-top: 8px solid white;
+    float: right;
+
+
+}
+
+
+.meatActive,
+.meatCollapsible:hover {
+    background-color: #7a000e;
+}
+
+.meatContent {
+
+    display: none;
+    width: 30%;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+.header{
+    font-family: Calibri;
+    color: cornflowerblue;
+    border:1px solid grey;
+    background: cornsilk;
+}
+
+.footer{
+    color: darkorange;
+    right: 10px;
+    justify-content: flex-end;
+    font-family: Calibri;
+    bottom:1px;
+    width:100%;
+    position: absolute;
+    display: flex;
+
+}
+
+.pagecontent{
+    font-family: Calibri;
+}

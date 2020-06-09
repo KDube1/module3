@@ -11,7 +11,7 @@
     <h1>KrishnaMart</h1>
 </div>
 
-<div id="Client" class="pagecontent" style="display:none">
+<div id="Client" class="pagecontent" style="display:inline">
     <h3>Preferences</h3>
     <p>Please indicate your dietary preferences:</p>
     <div id="dietSelect" name="dietSelect">
@@ -32,7 +32,23 @@
     <p>We preselected products based on your dietary preferences.</p>
     Choose items to buy:
     <div id="displayProduct"></div>
-    <button id="addCart" type="button">
+    <button type="button" id = "vegCollapsible" class="veggieCollapsible">Vegetables</button>
+    <div class="veggieContent" id="vegText">
+    </div><br>
+
+    <button type="button" id = "grainCollapsible" class="grainCollapsible">Grain Products</button>
+    <div class="grainContent" id="grainText">
+    </div><br>
+
+    <button type="button" id = "dairyCollapsible" class="dairyCollapsible">Dairy</button>
+    <div class="dairyContent" id="dairyText">
+    </div><br>
+
+    <button type="button" id = "meatCollapsible" class="meatCollapsible">Meat</button>
+    <div class="meatContent" id="meatText">
+    </div><br>
+
+    <button id="addCart" type="button"  class  ="button">
         Add selected items to cart.
     </button>
 </div>
@@ -41,6 +57,8 @@
     <h3>Cart</h3>
     <p>Here is your cart.</p>
     <div id="displayCart"></div>
+    <br>
+
 </div>
 
 
