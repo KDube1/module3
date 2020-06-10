@@ -169,6 +169,12 @@ function populateProductCollapsibles() {
             label.appendChild(document.createTextNode(productArray[i].name + ": $" + productArray[i].price));
             vegCol.appendChild(label);
 
+            var img = document.createElement("img");
+            img.src = productArray[i].link;
+            img.width = 50;
+            img.height = 50;
+
+            vegCol.appendChild(img);
 
             vegCol.appendChild(document.createElement("br"));
         }
@@ -186,7 +192,11 @@ function populateProductCollapsibles() {
             label.appendChild(document.createTextNode(productArray[i].name + ": $" + productArray[i].price));
             grainCol.appendChild(label);
 
-
+            var img = document.createElement("img");
+            img.src = productArray[i].link;
+            img.width = 50;
+            img.height = 50;
+            grainCol.appendChild(img);
             grainCol.appendChild(document.createElement("br"));
         }
 
@@ -203,7 +213,11 @@ function populateProductCollapsibles() {
             label.appendChild(document.createTextNode(productArray[i].name + ": $" + productArray[i].price));
             dairyCol.appendChild(label);
 
-
+            var img = document.createElement("img");
+            img.src = productArray[i].link;
+            img.width = 50;
+            img.height = 50;
+            dairyCol.appendChild(img);
             dairyCol.appendChild(document.createElement("br"));
         }
 
@@ -219,6 +233,13 @@ function populateProductCollapsibles() {
             label.htmlFor = productArray[i].name;
             label.appendChild(document.createTextNode(productArray[i].name + ": $" + productArray[i].price));
             meatCol.appendChild(label);
+
+            var img = document.createElement("img");
+            img.src = productArray[i].link;
+            img.width = 50;
+            img.height = 50;
+
+            meatCol.appendChild(img);
 
 
             meatCol.appendChild(document.createElement("br"));
